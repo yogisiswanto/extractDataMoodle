@@ -56,23 +56,41 @@
 
         <div class="row">
 
-            <div class="col-sm-3">
+            <div class="col-sm-1">
             
             </div>
-            <div class="col-6">
+            <div class="col-10">
 
                 <div class="card border-primary mb-3">
                     <div class="card-header">
                     
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                                <a class="nav-link active" id="kelompok-1-tab" data-toggle="tab" href="#kelompok-1" role="tab" aria-controls="kelompok-1" aria-selected="true">Kelompok 1</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                                <a class="nav-link" id="kelompok-2-tab" data-toggle="tab" href="#kelompok-2" role="tab" aria-controls="kelompok-2" aria-selected="false">Kelompok 2</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                                <a class="nav-link" id="kelompok-3-tab" data-toggle="tab" href="#kelompok-3" role="tab" aria-controls="kelompok-3" aria-selected="false">Kelompok 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="kelompok-4-tab" data-toggle="tab" href="#kelompok-4" role="tab" aria-controls="kelompok-4" aria-selected="false">Kelompok 4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="kelompok-5-tab" data-toggle="tab" href="#kelompok-5" role="tab" aria-controls="kelompok-5" aria-selected="false">Kelompok 5</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="kelompok-6-tab" data-toggle="tab" href="#kelompok-6" role="tab" aria-controls="kelompok-6" aria-selected="false">Kelompok 6</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="kelompok-7-tab" data-toggle="tab" href="#kelompok-7" role="tab" aria-controls="kelompok-7" aria-selected="false">Kelompok 7</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="kelompok-8-tab" data-toggle="tab" href="#kelompok-8" role="tab" aria-controls="kelompok-8" aria-selected="false">Kelompok 8</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="kelompok-9-tab" data-toggle="tab" href="#kelompok-9" role="tab" aria-controls="kelompok-9" aria-selected="false">Kelompok 9</a>
                             </li>
 
                         <!-- End of myTab -->
@@ -83,9 +101,15 @@
                     <div class="card-body">
                         
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
+                            <div class="tab-pane fade show active" id="kelompok-1" role="tabpanel" aria-labelledby="kelompok-1-tab">Home</div>
+                            <div class="tab-pane fade" id="kelompok-2" role="tabpanel" aria-labelledby="kelompok-2-tab">Profile</div>
+                            <div class="tab-pane fade" id="kelompok-3" role="tabpanel" aria-labelledby="kelompok-3-tab">Contact</div>
+                            <div class="tab-pane fade" id="kelompok-4" role="tabpanel" aria-labelledby="kelompok-4-tab">Contact</div>
+                            <div class="tab-pane fade" id="kelompok-5" role="tabpanel" aria-labelledby="kelompok-5-tab">Contact</div>
+                            <div class="tab-pane fade" id="kelompok-6" role="tabpanel" aria-labelledby="kelompok-6-tab">Contact</div>
+                            <div class="tab-pane fade" id="kelompok-7" role="tabpanel" aria-labelledby="kelompok-7-tab">Contact</div>
+                            <div class="tab-pane fade" id="kelompok-8" role="tabpanel" aria-labelledby="kelompok-8-tab">Contact</div>
+                            <div class="tab-pane fade" id="kelompok-9" role="tabpanel" aria-labelledby="kelompok-9-tab">Contact</div>
 
                         <!-- End of tab-content -->
                         </div>                    
