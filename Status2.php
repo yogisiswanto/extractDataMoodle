@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Status</title>
   </head>
   <body>
 
@@ -62,6 +62,7 @@
             <div class="col-10">
 
                 <div class="card border-primary mb-3">
+                
                     <div class="card-header">
                     
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -101,7 +102,80 @@
                     <div class="card-body">
                         
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="kelompok-1" role="tabpanel" aria-labelledby="kelompok-1-tab">Home</div>
+                            
+                            <div class="tab-pane fade show active" id="kelompok-1" role="tabpanel" aria-labelledby="kelompok-1-tab">
+                            
+                                <div class="row">
+
+                                    <div class="col-6">
+
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Sent</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    <!-- End of col-6 -->
+                                    </div>
+
+                                    <div class="col-6">
+
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Replied</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    <!-- End of col-6 -->
+                                    </div>
+
+                                <!-- End of row -->
+                                </div>
+
+                            <!-- End of kelompok-1 -->
+                            </div>
                             <div class="tab-pane fade" id="kelompok-2" role="tabpanel" aria-labelledby="kelompok-2-tab">Profile</div>
                             <div class="tab-pane fade" id="kelompok-3" role="tabpanel" aria-labelledby="kelompok-3-tab">Contact</div>
                             <div class="tab-pane fade" id="kelompok-4" role="tabpanel" aria-labelledby="kelompok-4-tab">Contact</div>
