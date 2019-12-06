@@ -87,6 +87,7 @@
                         </ul>
                     <!-- End of card-header -->
                     </div>
+
                     <div class="card-body">
                         
                         <div class="tab-content" id="myTabContent">
@@ -156,14 +157,534 @@
                                 </div>
                             <!-- End of kelompok-1 -->
                             </div>
-                            <div class="tab-pane fade" id="kelompok-2" role="tabpanel" aria-labelledby="kelompok-2-tab">Profile</div>
-                            <div class="tab-pane fade" id="kelompok-3" role="tabpanel" aria-labelledby="kelompok-3-tab">Contact</div>
-                            <div class="tab-pane fade" id="kelompok-4" role="tabpanel" aria-labelledby="kelompok-4-tab">Contact</div>
-                            <div class="tab-pane fade" id="kelompok-5" role="tabpanel" aria-labelledby="kelompok-5-tab">Contact</div>
-                            <div class="tab-pane fade" id="kelompok-6" role="tabpanel" aria-labelledby="kelompok-6-tab">Contact</div>
-                            <div class="tab-pane fade" id="kelompok-7" role="tabpanel" aria-labelledby="kelompok-7-tab">Contact</div>
-                            <div class="tab-pane fade" id="kelompok-8" role="tabpanel" aria-labelledby="kelompok-8-tab">Contact</div>
-                            <div class="tab-pane fade" id="kelompok-9" role="tabpanel" aria-labelledby="kelompok-9-tab">Contact</div>
+
+                            <div class="tab-pane fade" id="kelompok-2" role="tabpanel" aria-labelledby="kelompok-2-tab">
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Sent</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Replied</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                <!-- End of row -->
+                                </div>                            
+                            <!-- End of kelompok-2 -->
+                            </div>
+
+                            <div class="tab-pane fade" id="kelompok-3" role="tabpanel" aria-labelledby="kelompok-3-tab">
+                            
+                                 <div class="row">
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Sent</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Replied</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                <!-- End of row -->
+                                </div>
+                            <!-- End of kelompok-3 -->
+                            </div>
+
+                            <div class="tab-pane fade" id="kelompok-4" role="tabpanel" aria-labelledby="kelompok-4-tab">
+                            
+                                <div class="row">
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Sent</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Replied</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                <!-- End of row -->
+                                </div>
+                            <!-- End of kelompok-4 -->
+                            </div>
+
+                            <div class="tab-pane fade" id="kelompok-5" role="tabpanel" aria-labelledby="kelompok-5-tab">
+                            
+                                <div class="row">
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Sent</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Replied</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                <!-- End of row -->
+                                </div>
+                            <!-- End of kelompok-5 -->
+                            </div>
+
+                            <div class="tab-pane fade" id="kelompok-6" role="tabpanel" aria-labelledby="kelompok-6-tab">
+                            
+                                <div class="row">
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Sent</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Replied</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                <!-- End of row -->
+                                </div>
+                            <!-- End of kelompok-6 -->
+                            </div>
+
+                            <div class="tab-pane fade" id="kelompok-7" role="tabpanel" aria-labelledby="kelompok-7-tab">
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Sent</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Replied</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                <!-- End of row -->
+                                </div>
+                            <!-- End of kelompok-7 -->
+                            </div>
+
+                            <div class="tab-pane fade" id="kelompok-8" role="tabpanel" aria-labelledby="kelompok-8-tab">
+                            
+                                <div class="row">
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Sent</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Replied</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                <!-- End of row -->
+                                </div>
+                            <!-- End of kelompok-8 -->
+                            </div>
+
+                            <div class="tab-pane fade" id="kelompok-9" role="tabpanel" aria-labelledby="kelompok-9-tab">
+                            
+                                <div class="row">
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Sent</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                    <div class="col-6">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>                                        
+                                                    <th scope="col">Rank</th>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">Jumlah Replied</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>                                    
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <!-- End of col-6 -->
+                                    </div>
+                                <!-- End of row -->
+                                </div>
+                            <!-- End of kelompok-9 -->
+                            </div>
                         <!-- End of tab-content -->
                         </div>                    
                     <!-- End of card-body -->
