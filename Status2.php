@@ -35,8 +35,7 @@
                 <!-- End of navbar-nav -->
                 </ul>
             <!-- End of NavbarNav -->
-            </div>
-        
+            </div>        
         <!-- End of Navbar Menu -->
         </nav>
         
