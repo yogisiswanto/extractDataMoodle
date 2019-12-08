@@ -17,6 +17,9 @@
   <!-- Content here -->
     
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -96,30 +99,30 @@
                                 <table class="table table-hover">
                                     <thead class="thead-dark">
                                         <tr>                                        
-                                            <th scope="col-sm-3" class=" text-center">Reference ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Order ID</th>
-                                            <th scope="col-sm-3" class=" text-center">User ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Message</th>
+                                            <th scope="col-sm-3" class="text-center">Reference ID</th>
+                                            <th scope="col-sm-3" class="text-center">Order ID</th>
+                                            <th scope="col-sm-3" class="text-center">User ID</th>
+                                            <th scope="col-sm-3" class="text-center">Message</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>                                    
-                                            <td class=" text-center">Mark</td>
-                                            <td class=" text-center">Otto</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@mdo</td>
+                                            <td class="text-center">Mark</td>
+                                            <td class="text-center">Otto</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@mdo</td>
                                         </tr>
                                         <tr>                                        
-                                            <td class=" text-center">Jacob</td>
-                                            <td class=" text-center">Thornton</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@fat</td>
+                                            <td class="text-center">Jacob</td>
+                                            <td class="text-center">Thornton</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@fat</td>
                                         </tr>
                                         <tr>
-                                            <td class=" text-center">Larry</td>
-                                            <td class=" text-center">the Bird</td>
-                                            <td class=" text-center">@twitter</td>
-                                            <td class=" text-center">@twitter</td>
+                                            <td class="text-center">Larry</td>
+                                            <td class="text-center">the Bird</td>
+                                            <td class="text-center">@twitter</td>
+                                            <td class="text-center">@twitter</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -132,30 +135,30 @@
                                 <table class="table table-hover">
                                     <thead class="thead-dark">
                                         <tr>                                        
-                                            <th scope="col-sm-3" class=" text-center">Reference ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Order ID</th>
-                                            <th scope="col-sm-3" class=" text-center">User ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Message</th>
+                                            <th scope="col-sm-3" class="text-center">Reference ID</th>
+                                            <th scope="col-sm-3" class="text-center">Order ID</th>
+                                            <th scope="col-sm-3" class="text-center">User ID</th>
+                                            <th scope="col-sm-3" class="text-center">Message</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>                                    
-                                            <td class=" text-center">Mark</td>
-                                            <td class=" text-center">Otto</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@mdo</td>
+                                            <td class="text-center">Mark</td>
+                                            <td class="text-center">Otto</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@mdo</td>
                                         </tr>
                                         <tr>                                        
-                                            <td class=" text-center">Jacob</td>
-                                            <td class=" text-center">Thornton</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@fat</td>
+                                            <td class="text-center">Jacob</td>
+                                            <td class="text-center">Thornton</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@fat</td>
                                         </tr>
                                         <tr>
-                                            <td class=" text-center">Larry</td>
-                                            <td class=" text-center">the Bird</td>
-                                            <td class=" text-center">@twitter</td>
-                                            <td class=" text-center">@twitter</td>
+                                            <td class="text-center">Larry</td>
+                                            <td class="text-center">the Bird</td>
+                                            <td class="text-center">@twitter</td>
+                                            <td class="text-center">@twitter</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -168,30 +171,30 @@
                                 <table class="table table-hover">
                                     <thead class="thead-dark">
                                         <tr>                                        
-                                            <th scope="col-sm-3" class=" text-center">Reference ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Order ID</th>
-                                            <th scope="col-sm-3" class=" text-center">User ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Message</th>
+                                            <th scope="col-sm-3" class="text-center">Reference ID</th>
+                                            <th scope="col-sm-3" class="text-center">Order ID</th>
+                                            <th scope="col-sm-3" class="text-center">User ID</th>
+                                            <th scope="col-sm-3" class="text-center">Message</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>                                    
-                                            <td class=" text-center">Mark</td>
-                                            <td class=" text-center">Otto</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@mdo</td>
+                                            <td class="text-center">Mark</td>
+                                            <td class="text-center">Otto</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@mdo</td>
                                         </tr>
                                         <tr>                                        
-                                            <td class=" text-center">Jacob</td>
-                                            <td class=" text-center">Thornton</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@fat</td>
+                                            <td class="text-center">Jacob</td>
+                                            <td class="text-center">Thornton</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@fat</td>
                                         </tr>
                                         <tr>
-                                            <td class=" text-center">Larry</td>
-                                            <td class=" text-center">the Bird</td>
-                                            <td class=" text-center">@twitter</td>
-                                            <td class=" text-center">@twitter</td>
+                                            <td class="text-center">Larry</td>
+                                            <td class="text-center">the Bird</td>
+                                            <td class="text-center">@twitter</td>
+                                            <td class="text-center">@twitter</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -204,30 +207,30 @@
                                 <table class="table table-hover">
                                     <thead class="thead-dark">
                                         <tr>                                        
-                                            <th scope="col-sm-3" class=" text-center">Reference ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Order ID</th>
-                                            <th scope="col-sm-3" class=" text-center">User ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Message</th>
+                                            <th scope="col-sm-3" class="text-center">Reference ID</th>
+                                            <th scope="col-sm-3" class="text-center">Order ID</th>
+                                            <th scope="col-sm-3" class="text-center">User ID</th>
+                                            <th scope="col-sm-3" class="text-center">Message</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>                                    
-                                            <td class=" text-center">Mark</td>
-                                            <td class=" text-center">Otto</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@mdo</td>
+                                            <td class="text-center">Mark</td>
+                                            <td class="text-center">Otto</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@mdo</td>
                                         </tr>
                                         <tr>                                        
-                                            <td class=" text-center">Jacob</td>
-                                            <td class=" text-center">Thornton</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@fat</td>
+                                            <td class="text-center">Jacob</td>
+                                            <td class="text-center">Thornton</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@fat</td>
                                         </tr>
                                         <tr>
-                                            <td class=" text-center">Larry</td>
-                                            <td class=" text-center">the Bird</td>
-                                            <td class=" text-center">@twitter</td>
-                                            <td class=" text-center">@twitter</td>
+                                            <td class="text-center">Larry</td>
+                                            <td class="text-center">the Bird</td>
+                                            <td class="text-center">@twitter</td>
+                                            <td class="text-center">@twitter</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -240,30 +243,30 @@
                                 <table class="table table-hover">
                                     <thead class="thead-dark">
                                         <tr>                                        
-                                            <th scope="col-sm-3" class=" text-center">Reference ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Order ID</th>
-                                            <th scope="col-sm-3" class=" text-center">User ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Message</th>
+                                            <th scope="col-sm-3" class="text-center">Reference ID</th>
+                                            <th scope="col-sm-3" class="text-center">Order ID</th>
+                                            <th scope="col-sm-3" class="text-center">User ID</th>
+                                            <th scope="col-sm-3" class="text-center">Message</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>                                    
-                                            <td class=" text-center">Mark</td>
-                                            <td class=" text-center">Otto</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@mdo</td>
+                                            <td class="text-center">Mark</td>
+                                            <td class="text-center">Otto</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@mdo</td>
                                         </tr>
                                         <tr>                                        
-                                            <td class=" text-center">Jacob</td>
-                                            <td class=" text-center">Thornton</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@fat</td>
+                                            <td class="text-center">Jacob</td>
+                                            <td class="text-center">Thornton</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@fat</td>
                                         </tr>
                                         <tr>
-                                            <td class=" text-center">Larry</td>
-                                            <td class=" text-center">the Bird</td>
-                                            <td class=" text-center">@twitter</td>
-                                            <td class=" text-center">@twitter</td>
+                                            <td class="text-center">Larry</td>
+                                            <td class="text-center">the Bird</td>
+                                            <td class="text-center">@twitter</td>
+                                            <td class="text-center">@twitter</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -276,30 +279,30 @@
                                 <table class="table table-hover">
                                     <thead class="thead-dark">
                                         <tr>                                        
-                                            <th scope="col-sm-3" class=" text-center">Reference ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Order ID</th>
-                                            <th scope="col-sm-3" class=" text-center">User ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Message</th>
+                                            <th scope="col-sm-3" class="text-center">Reference ID</th>
+                                            <th scope="col-sm-3" class="text-center">Order ID</th>
+                                            <th scope="col-sm-3" class="text-center">User ID</th>
+                                            <th scope="col-sm-3" class="text-center">Message</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>                                    
-                                            <td class=" text-center">Mark</td>
-                                            <td class=" text-center">Otto</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@mdo</td>
+                                            <td class="text-center">Mark</td>
+                                            <td class="text-center">Otto</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@mdo</td>
                                         </tr>
                                         <tr>                                        
-                                            <td class=" text-center">Jacob</td>
-                                            <td class=" text-center">Thornton</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@fat</td>
+                                            <td class="text-center">Jacob</td>
+                                            <td class="text-center">Thornton</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@fat</td>
                                         </tr>
                                         <tr>
-                                            <td class=" text-center">Larry</td>
-                                            <td class=" text-center">the Bird</td>
-                                            <td class=" text-center">@twitter</td>
-                                            <td class=" text-center">@twitter</td>
+                                            <td class="text-center">Larry</td>
+                                            <td class="text-center">the Bird</td>
+                                            <td class="text-center">@twitter</td>
+                                            <td class="text-center">@twitter</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -312,30 +315,30 @@
                                 <table class="table table-hover">
                                     <thead class="thead-dark">
                                         <tr>                                        
-                                            <th scope="col-sm-3" class=" text-center">Reference ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Order ID</th>
-                                            <th scope="col-sm-3" class=" text-center">User ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Message</th>
+                                            <th scope="col-sm-3" class="text-center">Reference ID</th>
+                                            <th scope="col-sm-3" class="text-center">Order ID</th>
+                                            <th scope="col-sm-3" class="text-center">User ID</th>
+                                            <th scope="col-sm-3" class="text-center">Message</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>                                    
-                                            <td class=" text-center">Mark</td>
-                                            <td class=" text-center">Otto</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@mdo</td>
+                                            <td class="text-center">Mark</td>
+                                            <td class="text-center">Otto</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@mdo</td>
                                         </tr>
                                         <tr>                                        
-                                            <td class=" text-center">Jacob</td>
-                                            <td class=" text-center">Thornton</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@fat</td>
+                                            <td class="text-center">Jacob</td>
+                                            <td class="text-center">Thornton</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@fat</td>
                                         </tr>
                                         <tr>
-                                            <td class=" text-center">Larry</td>
-                                            <td class=" text-center">the Bird</td>
-                                            <td class=" text-center">@twitter</td>
-                                            <td class=" text-center">@twitter</td>
+                                            <td class="text-center">Larry</td>
+                                            <td class="text-center">the Bird</td>
+                                            <td class="text-center">@twitter</td>
+                                            <td class="text-center">@twitter</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -348,30 +351,30 @@
                                 <table class="table table-hover">
                                     <thead class="thead-dark">
                                         <tr>                                        
-                                            <th scope="col-sm-3" class=" text-center">Reference ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Order ID</th>
-                                            <th scope="col-sm-3" class=" text-center">User ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Message</th>
+                                            <th scope="col-sm-3" class="text-center">Reference ID</th>
+                                            <th scope="col-sm-3" class="text-center">Order ID</th>
+                                            <th scope="col-sm-3" class="text-center">User ID</th>
+                                            <th scope="col-sm-3" class="text-center">Message</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>                                    
-                                            <td class=" text-center">Mark</td>
-                                            <td class=" text-center">Otto</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@mdo</td>
+                                            <td class="text-center">Mark</td>
+                                            <td class="text-center">Otto</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@mdo</td>
                                         </tr>
                                         <tr>                                        
-                                            <td class=" text-center">Jacob</td>
-                                            <td class=" text-center">Thornton</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@fat</td>
+                                            <td class="text-center">Jacob</td>
+                                            <td class="text-center">Thornton</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@fat</td>
                                         </tr>
                                         <tr>
-                                            <td class=" text-center">Larry</td>
-                                            <td class=" text-center">the Bird</td>
-                                            <td class=" text-center">@twitter</td>
-                                            <td class=" text-center">@twitter</td>
+                                            <td class="text-center">Larry</td>
+                                            <td class="text-center">the Bird</td>
+                                            <td class="text-center">@twitter</td>
+                                            <td class="text-center">@twitter</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -384,30 +387,30 @@
                                 <table class="table table-hover">
                                     <thead class="thead-dark">
                                         <tr>                                        
-                                            <th scope="col-sm-3" class=" text-center">Reference ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Order ID</th>
-                                            <th scope="col-sm-3" class=" text-center">User ID</th>
-                                            <th scope="col-sm-3" class=" text-center">Message</th>
+                                            <th scope="col-sm-3" class="text-center">Reference ID</th>
+                                            <th scope="col-sm-3" class="text-center">Order ID</th>
+                                            <th scope="col-sm-3" class="text-center">User ID</th>
+                                            <th scope="col-sm-3" class="text-center">Message</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>                                    
-                                            <td class=" text-center">Mark</td>
-                                            <td class=" text-center">Otto</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@mdo</td>
+                                            <td class="text-center">Mark</td>
+                                            <td class="text-center">Otto</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@mdo</td>
                                         </tr>
                                         <tr>                                        
-                                            <td class=" text-center">Jacob</td>
-                                            <td class=" text-center">Thornton</td>
-                                            <td class=" text-center">@mdo</td>
-                                            <td class=" text-center">@fat</td>
+                                            <td class="text-center">Jacob</td>
+                                            <td class="text-center">Thornton</td>
+                                            <td class="text-center">@mdo</td>
+                                            <td class="text-center">@fat</td>
                                         </tr>
                                         <tr>
-                                            <td class=" text-center">Larry</td>
-                                            <td class=" text-center">the Bird</td>
-                                            <td class=" text-center">@twitter</td>
-                                            <td class=" text-center">@twitter</td>
+                                            <td class="text-center">Larry</td>
+                                            <td class="text-center">the Bird</td>
+                                            <td class="text-center">@twitter</td>
+                                            <td class="text-center">@twitter</td>
                                         </tr>
                                     </tbody>
                                 </table>

@@ -1,3 +1,5 @@
+<?php include 'Library.php'; ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,9 +12,11 @@
   </head>
   <body>
   <div class="container-fluid">
-  <!-- Content here -->
-    
+  <!-- Content here -->    
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 
                 <ul class="navbar-nav">
@@ -98,27 +102,35 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Sent</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Sent</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+                                                                                            
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = sent(46);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Sent"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
+                                                </tr>                                                
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -127,27 +139,34 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Replied</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Replied</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = replied(46);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Replied"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -164,27 +183,35 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Sent</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Sent</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+                                                
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = sent(47);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Sent"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
+                                                </tr>                                                
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -193,27 +220,34 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Replied</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Replied</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = replied(47);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Replied"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -230,27 +264,35 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Sent</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Sent</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+                                                
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = sent(48);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Sent"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
+                                                </tr>                                                
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -259,27 +301,34 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Replied</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Replied</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = replied(48);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Replied"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -296,27 +345,35 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Sent</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Sent</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+                                                
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = sent(49);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Sent"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
+                                                </tr>                                                
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -325,27 +382,34 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Replied</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Replied</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = replied(49);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Replied"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -362,27 +426,35 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Sent</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Sent</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+                                            
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = sent(50);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Sent"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
+                                                </tr>                                                
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -391,27 +463,34 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Replied</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Replied</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = replied(50);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Replied"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -428,27 +507,35 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Sent</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Sent</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+                                                
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = sent(51);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Sent"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
+                                                </tr>                                                
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -457,27 +544,34 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Replied</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Replied</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = replied(51);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Replied"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -494,27 +588,35 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Sent</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Sent</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+                                                
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = sent(52);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Sent"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
+                                                </tr>                                                
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -523,27 +625,34 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Replied</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Replied</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = replied(52);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Replied"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -560,27 +669,35 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Sent</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Sent</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+                                                
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = sent(53);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Sent"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
+                                                </tr>                                                
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -589,27 +706,34 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Replied</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Replied</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = replied(53);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Replied"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -626,27 +750,35 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Sent</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Sent</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+                                                
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = sent(54);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Sent"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
+                                                </tr>                                                
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
@@ -655,27 +787,34 @@
                                         <table class="table table-hover">
                                             <thead class="thead-dark">
                                                 <tr>                                        
-                                                    <th scope="col">Rank</th>
-                                                    <th scope="col">User ID</th>
-                                                    <th scope="col">Jumlah Replied</th>
+                                                    <th scope="col" class="text-center">Rank</th>
+                                                    <th scope="col" class="text-center">User ID</th>
+                                                    <th scope="col" class="text-center">Jumlah Replied</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>                                    
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>                                        
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+
+                                                <?php
+                                                    //getting data from database...
+                                                    $result = replied(54);
+
+                                                    // iterator
+                                                    $numbering = 1;
+
+                                                    while ($row = $result->fetch_assoc()) {
+                                                        
+                                                        // showing the data...
+                                                        echo "<tr>";
+                                                            echo "<td class='text-center'>{$numbering}</td>";
+                                                            echo "<td class='text-center'>{$row["UserID"]}</td>";
+                                                            echo "<td class='text-center'>{$row["Replied"]}</td>";
+                                                        echo "</tr>";
+
+                                                        // iterate numbering
+                                                        $numbering++;
+                                                    }  
+                                                ?>
+
                                             </tbody>
                                         </table>
                                     <!-- End of col-6 -->
