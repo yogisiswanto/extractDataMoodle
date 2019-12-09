@@ -156,4 +156,44 @@
         //return the result...
         return $result;
     }
+
+    function collaboration(){
+
+        //creating connection to database            	
+        $connection = createConnection();
+
+        $sql = "SELECT `id`,`parent`,`userid`,`message` 
+                FROM `mdl_forum_posts` 
+                WHERE `discussion` = 52";
+
+        // access the query....
+        $result = query($connection, $sql);
+
+        $new = array();
+        $temp_data = array();
+        $i = 0;
+
+        while ($row = $result->fetch_assoc()) {
+
+            $new[$row['parent']][] = $row;
+            $temp_data[$i] = $row;
+                                                        
+            // showing the data...          
+            echo "{$row["id"]}<br>";
+            echo "{$row["parent"]}</td>";
+            echo "{$row["userid"]}</td>";
+            echo "{$row["message"]}</td>";
+
+            $i += 1;    
+        }
+
+        echo "<pre>";
+            print_r($temp_data);
+        // print_r($result);
+        echo "</pre>";
+    
+
+    }
+
+    collaboration();
 ?>
