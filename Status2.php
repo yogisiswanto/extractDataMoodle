@@ -33,7 +33,7 @@
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="font-size:1.2rem">|</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="font-size:1.2rem">Kolaborasi<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="Kolaborasi.php" style="font-size:1.2rem">Kolaborasi<span class="sr-only">(current)</span></a>
                     </li>
                 
                 <!-- End of navbar-nav -->

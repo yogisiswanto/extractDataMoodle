@@ -157,43 +157,120 @@
         return $result;
     }
 
-    function collaboration(){
-
+    // function for getting Username
+    function getUserName($userID){
+        
         //creating connection to database            	
         $connection = createConnection();
 
-        $sql = "SELECT `id`,`parent`,`userid`,`message` 
-                FROM `mdl_forum_posts` 
-                WHERE `discussion` = 52";
-
+        $sql = "SELECT 
+                    firstname, lastname
+                FROM
+                    mdl_user
+                WHERE
+                    id = {$userID}";
+                    
         // access the query....
         $result = query($connection, $sql);
 
-        $new = array();
-        $temp_data = array();
-        $i = 0;
-
         while ($row = $result->fetch_assoc()) {
+            
+            $name =  $row['firstname']." ".$row['lastname'];
+        }  
 
-            $new[$row['parent']][] = $row;
-            $temp_data[$i] = $row;
-                                                        
-            // showing the data...          
-            echo "{$row["id"]}<br>";
-            echo "{$row["parent"]}</td>";
-            echo "{$row["userid"]}</td>";
-            echo "{$row["message"]}</td>";
+        //return the result...
+        return $name;
+        
+    }    
 
-            $i += 1;    
-        }
+    // Create tree
+	function createTree(&$list, $parent){
 
-        echo "<pre>";
-            print_r($temp_data);
-        // print_r($result);
-        echo "</pre>";
-    
+        $tree = array();
 
+        foreach ($parent as $k=>$l){
+
+            if(isset($list[$l['id']])){
+
+                $l['children'] = createTree($list, $list[$l['id']]);
+            }
+
+            $tree[] = $l;
+        } 
+
+        return $tree;
     }
 
-    collaboration();
+    // Count rating from branch
+    function countRating($branch, $connection){
+
+        global $ratings;
+        
+        // Get parent
+        $sql="SELECT * FROM `mdl_forum_posts` WHERE `id` =" . $branch['parent'] . "";
+    	$query=mysqli_query($connection, $sql);
+    	$data=mysqli_fetch_assoc($query);
+    	
+        $rating = 0;
+        if ($data['userid']){
+            if (strpos($branch['message'], "<p>*") !== false){
+                $index = 3;
+                while ($branch['message'][$index] === "*"){
+                    $rating += 1;
+                    $index += 1;
+                }
+            }
+            
+            if (array_key_exists($data['userid'], $ratings)){
+                $ratings[$data['userid']] += $rating;
+            }else{
+                $ratings[$data['userid']] = $rating;
+            }
+        }
+    }
+    
+    // This is where magic happens
+    function createCustomLinkArray($tree, $userTemp, $connection){
+        global $result, $ratings;
+        
+        foreach($tree as $index=>$branch){
+            if (isset($tree[$index]["children"])){
+                // Push result and rating
+                array_push($userTemp, $tree[$index]['userid']);
+                countRating($tree[$index], $connection);
+                
+                // Recursion
+                createCustomLinkArray($tree[$index]["children"], $userTemp, $connection);
+            }else{
+                // Push result and rating
+                array_push($userTemp, $tree[$index]['userid']);
+                countRating($tree[$index], $connection);
+                
+                // Push result to global variable
+                array_push($result, $userTemp);
+                
+                // foreach($userTemp as $post){
+                //     $sql="SELECT `firstname`, `lastname` FROM `mdl_user` WHERE `id` =" . $post['userid'] . "";
+    
+                // 	$query=mysqli_query($connection, $sql);
+                // 	$data=mysqli_fetch_assoc($query);
+                // 	print_r($data);
+                // }
+            }
+            
+            // Pop temp result
+            array_pop($userTemp);
+        }
+    }
+    
+    
+    
+    
+    
+    // }
+
+    // collaboration();
+
+
+    // getUserName(219);
 ?>
